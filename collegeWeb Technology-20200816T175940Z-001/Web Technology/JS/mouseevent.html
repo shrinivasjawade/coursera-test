@@ -1,0 +1,38 @@
+<html> 
+  
+<head> 
+    <title> 
+      Onmouseover event 
+  </title> 
+</head> 
+  
+<body> 
+    <center> 
+  
+        <h1 id="hID"> 
+          GHRCEM
+      </h1> 
+        <h2> 
+          IT Department
+      </h2> 
+  
+        <script> 
+            document.getElementById("hID").addEventListener( 
+              "mouseover", over); 
+            
+            document.getElementById("hID").addEventListener( 
+              "mouseout", out); 
+  
+            function over() { 
+                document.getElementById("hID").style.color = "pink"; 
+            } 
+  
+            function out() { 
+                document.getElementById( 
+                  "hID").style.color = "green"; 
+            } 
+        </script> 
+    </center> 
+</body> 
+  
+</html>

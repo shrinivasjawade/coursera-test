@@ -1,0 +1,30 @@
+<html>
+     <head>
+     <script>
+     function time()
+     {
+          var d = new Date();
+          var ty = d.getHours() + ":"+d.getMinutes()+":"+d.getSeconds();
+          document.formt.timetxt.value=ty;
+          setInterval("time()",1000)
+          
+          var td = d.getDay() + "/"+d.getMonth()+"/"+d.getFullYear();
+          document.formt.datetxt.value=td;
+          
+ }
+     </script>
+     </head>
+
+
+
+
+
+<body onload="time()">
+     <center><h2>Displaying Time and Date</h2>
+          <form name="formt">
+               <input type=text name=timetxt size="8">
+               <input type=text name=datetxt size="8">
+          </form>
+     </center>
+</body>
+</html>
